@@ -27,36 +27,29 @@
             height: 100vh;
             display: grid;
             place-items: center;
-            align-items: center;
-            justify-content: center;
         }
-        .login-button{
+        .email-continer{
             display: grid;
-            background-color: var(--hospital-green);
-            border-radius: 2%;
-            width: 100%;
-            border: none;
-            padding: 12px;
-            margin-top: 15px;
+            align-content: center;
+            width: 300px;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 48px;
+            justify-self: center;
+        }
+        .title{
+            font-size: var(--lg);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .subtitle{
+            color: var(--very-light-pink);
             font-size: var(--md);
-            font-weight: bold;
-
-        }
-        .email .correo-enviado-div{
-            display: grid;
-            margin: 0;
-            width: 120px;
-            height: 120px;
-            border-radius: 100%;
-            background-color: var(--text-input-field);
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        @media (min-width: 700px){
-            .logo{
-                display: none;
-            }
+            font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 33px;
+            text-align: center;
         }
     </style>
 </head>
@@ -64,18 +57,17 @@
     <div class="email">
 
         <div class="email-container">
-            <img src="proyectoFronted/logos/logo_yard_sale.svg" alt="logo de pagina" class="logo">
+            <img src="/proyectoFronted/logos/logo_yard_sale.svg" alt="logo de pagina" class="logo">
             <h1 class="title">Email has been sent!</h1>
             <p class="subtitle">Please check your inbox for instructions on how to reset the password</p>
 
             
-            <div class="correo-enviado-div">
-                <img src="proyectoFronted/icons/email.svg" alt="logo de mensaje enviado" class="correo-enviado">
+            <div class="email-imagen">
+                <img src="/proyectoFronted/icons/email.svg" alt="logo de mensaje enviado" class="correo-enviado">
             </div>
 
             <button class="login-button">Login</button>
             <p>Didn't receive the email? <span class="span-reset">Resend</span></p>
-            <p>parrafo</p>
         </div>
 
     </div>
