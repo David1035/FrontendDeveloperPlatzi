@@ -32,6 +32,12 @@
             grid-template-rows: 1rf auto;
      
         }
+        .logo{
+            display: grid;
+            place-content: center;
+            margin-bottom: 50px;
+            width: 150px;
+        }
         .form {
             display: flex;
             flex-direction: column;
@@ -43,6 +49,14 @@
             border-radius: 5px;
             padding: 5px;
             margin: 5px;
+            margin-bottom: 30px;
+        }
+        .input-email{
+            display: flex;
+            background-color: var(--very-light-pink);
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px; 
         }
         .primary-button {
             background-color: var(--hospital-green);
@@ -58,10 +72,10 @@
             <img src="logos/logo_yard_sale.svg" alt="logo" class="logo">
 
             <form action="/" class="form">
-                <label for="password" class="label">password</label>
+                <label for="password" class="label">Email address</label>
+                <input type="email-address" id="email-address" placeholder="email@david.com" class="input-email">
+                <label for="password" class="label">Password</label>
                 <input type="password" id="password" placeholder="*********" class="input-password">
-                <label for="new-password" class="label">Re-enter password</label>
-                <input type="password" id="new-password" placeholder="*********" class="input-password">
 
                 <input type="submit" value="confirm" class="primary-button login-button">
             </form>
