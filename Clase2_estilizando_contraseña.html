@@ -40,24 +40,38 @@
             justify-self: center; 
             display: none;           
         }
+        .title{
+            font-size: var(--lg);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .subtitle{
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            font-weight: 300;
+            margin-bottom: 48px;
+            text-align: center;
+        }
         .form{
-            display: grid;
+            display: grid;            
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+        .label{
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 4px;
         }
         .input{
-            background-color: var(--text-input-field);
-            border-radius: 8px;
+            color: var(--text-input-field);
             border: none;
-            height: 35px;
-            width: 100%;
-            
-
-        }
-        .email-content{
-            color: rgb(223, 72, 26);
+            border-radius: 8px;
             height: 30px;
-        }
-        .input-login{
-            margin-bottom: 25px;
+            font-size: var(--md);
+            padding: 8px;
+            margin-bottom: 12px;
         }
         .primary-button{
             background-color: var(--hospital-green);
@@ -65,36 +79,14 @@
             color: var(--white);
             font-weight: bold;
             width: 100%;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
             font-size: var(--md);
             height: 60px;
         }
         .login-button {
-            margin-top: 50px;
-            margin-bottom: 15px;
-            
-        }
-        .resend{
-            text-align: center;
-        }
-        .resend a{
-            color: var(--hospital-green);
-            text-decoration: none;
-            font-weight: 300;
-        }
-        .secundary-button{
-            border: var(--hospital-green) solid 2px;
-            background-color: var(--white);
-            border-radius: 8px;
-            width: 100%;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 150px;
-            height: 60px;
-            color: var(--hospital-green);
-            font-size: var(--md);
-
+            margin-top: 14px;
+            margin-bottom: 39px;
         }
         @media (max-width: 500px) {
             .logo{
@@ -109,20 +101,21 @@
         <div class="form-container">
             <img src="logos/logo_yard_sale.svg" alt="logo" class="logo">
 
-            <div class="form">
+            <h1 class="title">Create New Password</h1>
+            <p class="subtitle">Enter a new password for you acceout</p>
 
-                <label for="email" class="email-content email-label">Email address</label>
-                <input type="text" id="email" class="input input-login" placeholder="david@mail.com">
+            <form action="/" class="form">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" placeholder="*********" class="input input-password">
 
-                <label for="password" class="email-content">Password</label>
-                <input type="password" id="password" class="input" placeholder="*********">
+                <label for="new-password" class="label">New Password</label>
+                <input type="password" id="new-password" placeholder="*********" class="input input-password">
 
-                <input type="submit" value="Log in" class="primary-button login-button">
+                <input type="submit" value="Confirm" class="primary-button login-button">
+                <p>clase creando contraseña, 10:53 clase 6</p>
 
-                <a href="/">Forgot my password</a>
-            </div>
-
-            <button class="secundary-button login-button">Logn up</button>
+                <p>hola prueba</p>
+            </form>
         </div>
     </div>
 </body>
