@@ -40,16 +40,18 @@
             justify-self: center; 
             display: none;           
         }
-        .form{
-            display: grid;
+        .title{
+            font-size: var(--md);
+            margin-bottom: 36px;
+            text-align: start;
         }
-        .form a{
-            color: var(--hospital-green);
-            text-align: center;
-            margin-bottom: 52px;
-            text-decoration: none;
-            font-size: var(--sm);
-            font-weight: 300;
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+        .form div{
+            display: flex;
+            flex-direction: column;
         }
         .input{
             background-color: var(--text-input-field);
@@ -58,8 +60,10 @@
             height: 35px;
             width: 100%;
         }
-        .input-email{
-            margin-bottom: 25px;
+        .input-email, 
+        .input-name,
+        .input-password{
+            margin-bottom: 22px;
         }
         .primary-button{
             background-color: var(--hospital-green);
@@ -77,22 +81,14 @@
             margin-bottom: 15px;
             
         }
-        .resend{
-            text-align: center;
-        }
-        .resend a{
-            color: var(--hospital-green);
-            text-decoration: none;
-            font-weight: 300;
-        }
 
         @media (max-width: 500px) {
-            .logo{
-                display: block;
+            .form-container{
+                height: 100%;
             }
-            .secundary-button{
-                margin-top: 150px;
-
+            .form{
+                height: 100%;
+                justify-content: space-between;
             }
         }
 
@@ -104,14 +100,18 @@
             <img src="logos/logo_yard_sale.svg" alt="logo" class="logo">
 
             <div class="form">
-                <label for="name" class="label">Name</label>
-                <input type="text" id="name" class="input input-name" placeholder="David Hernandez">
+                <div>
+                    <h1 class="title">My account</h1>
+                    <label for="name" class="label">Name</label>
+                    <input type="text" id="name" class="input input-name" placeholder="David Hernandez">
 
-                <label for="email" class="label">Email</label>
-                <input type="text" id="email" class="input input-email" placeholder="david@mail.com">
+                    <label for="email" class="label">Email</label>
+                    <input type="text" id="email" class="input input-email" placeholder="david@mail.com">
 
-                <label for="password" class="email-content">Password</label>
-                <input type="password" id="password" class="input input-password" placeholder="*********">
+                    <label for="password" class="email-content">Password</label>
+                    <input type="password" id="password" class="input input-password" placeholder="*********">
+        
+                </div>
 
                 <input type="submit" value="Create" class="primary-button login-button">
 
