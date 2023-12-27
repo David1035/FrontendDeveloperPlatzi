@@ -43,22 +43,20 @@
         .form{
             display: grid;
         }
-        .form a{
-            color: var(--hospital-green);
-            text-align: center;
-            margin-bottom: 52px;
-            text-decoration: none;
-            font-size: var(--sm);
-            font-weight: 300;
-        }
         .input{
             background-color: var(--text-input-field);
             border-radius: 8px;
             border: none;
             height: 35px;
             width: 100%;
+            
+
         }
-        .input-email{
+        .email-content{
+            color: rgb(223, 72, 26);
+            height: 30px;
+        }
+        .input-login{
             margin-bottom: 25px;
         }
         .primary-button{
@@ -70,18 +68,7 @@
             border-radius: 8px;
             cursor: pointer;
             font-size: var(--md);
-            height: 50px;
-        }
-        .secundary-button{
-            border: var(--hospital-green) solid 1px;
-            background-color: var(--white);
-            border-radius: 8px;
-            width: 100%;
-            cursor: pointer;
-            font-weight: bold;
-            height: 50px;
-            color: var(--hospital-green);
-            font-size: var(--md);
+            height: 60px;
         }
         .login-button {
             margin-top: 50px;
@@ -96,14 +83,22 @@
             text-decoration: none;
             font-weight: 300;
         }
+        .secundary-button{
+            border: var(--hospital-green) solid 2px;
+            background-color: var(--white);
+            border-radius: 8px;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 150px;
+            height: 60px;
+            color: var(--hospital-green);
+            font-size: var(--md);
 
+        }
         @media (max-width: 500px) {
             .logo{
                 display: block;
-            }
-            .secundary-button{
-                margin-top: 150px;
-
             }
         }
 
@@ -117,15 +112,18 @@
             <div class="form">
 
                 <label for="email" class="email-content email-label">Email address</label>
-                <input type="text" id="email" class="input input-email" placeholder="david@mail.com">
+                <input type="text" class="input input-login" placeholder="david@mail.com">
 
-                <label for="password" class="email-content">Password</label>
-                <input type="password" id="password" class="input input-password" placeholder="*********">
+                <label for="email" class="email-content">Password</label>
+                <input type="password" class="input" placeholder="*********">
 
-                <input type="submit" value="Log in" class="primary-button login-button">
-
-                <a href="/">Forgot my password</a>
             </div>
+
+            <button class="primary-button login-button">Log in</button>
+
+            <p class="resend">
+                <a href="/">Forgot my password</a>
+            </p>
             <button class="secundary-button login-button">Logn up</button>
         </div>
     </div>
