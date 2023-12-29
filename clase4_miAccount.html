@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear y editar mi cuenta</title>
+    <title>profe- Crear y editar mi cuenta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
@@ -51,11 +51,11 @@
             flex-direction: column;
         }
         .input{
+            background-color: var(--text-input-field);
             border-radius: 8px;
             border: none;
             height: 35px;
             width: 100%;
-            color: var(--very-light-pink);
         }
         .input-email, 
         .input-name,
@@ -63,9 +63,9 @@
             margin-bottom: 22px;
         }
         .primary-button{
-            background-color: var(--white);
-            border: var(--hospital-green) 1px solid;
-            color: var(--hospital-green);
+            background-color: var(--hospital-green);
+            border: none;
+            color: var(--white);
             font-weight: bold;
             width: 100%;
             border-radius: 8px;
@@ -100,7 +100,6 @@
 <body>
     <div class="login">
         <div class="form-container">
-           
             <div class="encabezado encabezado-pagina">
                 <img src="icons/icon_menu.svg" alt="menu desplegable" class="icono-menu">
                 <img src="logos/logo_yard_sale.svg" alt="logo" class="logo">
@@ -111,19 +110,20 @@
                 <div>
                     <h1 class="title">My account</h1>
                     <label for="name" class="label">Name</label>
-                    <p class="input input-name">David Hernandez</p>
+                    <input type="text" id="name" class="input input-name" placeholder="David Hernandez">
 
                     <label for="email" class="label">Email</label>
-                    <p class="input input-email">david@mail.com</p>
+                    <input type="text" id="email" class="input input-email" placeholder="david@mail.com">
 
                     <label for="password" class="email-content">Password</label>
-                    <p class="input input-password">*********</p>
+                    <input type="password" id="password" class="input input-password" placeholder="*********">
         
                 </div>
 
-                <input type="submit" value="Edit" class="primary-button login-button">
+                <input type="submit" value="Create" class="primary-button login-button">
 
-            </div> 
+               
+            </div>  
                      
         </div>
     </div>
