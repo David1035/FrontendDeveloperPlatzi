@@ -51,11 +51,11 @@
             flex-direction: column;
         }
         .input{
+            background-color: var(--text-input-field);
             border-radius: 8px;
             border: none;
             height: 35px;
             width: 100%;
-            color: var(--very-light-pink);
         }
         .input-email, 
         .input-name,
@@ -63,9 +63,9 @@
             margin-bottom: 22px;
         }
         .primary-button{
-            background-color: var(--white);
-            border: var(--hospital-green) 1px solid;
-            color: var(--hospital-green);
+            background-color: var(--hospital-green);
+            border: none;
+            color: var(--white);
             font-weight: bold;
             width: 100%;
             border-radius: 8px;
@@ -110,17 +110,17 @@
                 <div>
                     <h1 class="title">My account</h1>
                     <label for="name" class="label">Name</label>
-                    <p class="input input-name">David Hernandez</p>
+                    <input type="text" id="name" class="input input-name" placeholder="David Hernandez">
 
                     <label for="email" class="label">Email</label>
-                    <p class="input input-email">david@mail.com</p>
+                    <input type="text" id="email" class="input input-email" placeholder="david@mail.com">
 
                     <label for="password" class="email-content">Password</label>
-                    <p class="input input-password">*********</p>
+                    <input type="password" id="password" class="input input-password" placeholder="*********">
         
                 </div>
 
-                <input type="submit" value="Edit" class="primary-button login-button">
+                <input type="submit" value="Create" class="primary-button login-button">
 
                
             </div>  
