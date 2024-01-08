@@ -24,55 +24,57 @@
             font-family: 'Quicksand', sans-serif;
             margin: 0;
         }
-        .desktop-menu{
-            width: 100px;
-            height: auto;
-            border: 1px solid var(--very-light-pink);
-            border-radius: 6px;
-            padding: 20px 20px 0 20px;
+        .mobile-menu{
+            padding: 24px;
         }
-        .desktop-menu ul{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .desktop-menu ul li{
-            text-align: end;
-        }
-        .desktop-menu ul li:nth-child(1),
-        .desktop-menu ul li:nth-child(2){
+        .mobile-menu a{
+            text-decoration: none;
+            color: var(--black);
             font-weight: bold;
         }
-        .desktop-menu ul li a{
-           text-decoration: none;
-            color: var(--black);
-            margin-bottom: 20px;
-            display: inline-block;
+        .mobile-menu ul{
+            padding: 0;
+            margin: 24px 0 0;
+            list-style: none;
         }
-        .desktop-menu ul li:last-child { 
-           padding-top: 20px;
-           border-top: 1px solid var(--very-light-pink);
+        .mobile-menu ul li{
+            margin-bottom: 24px;
         }
-        .desktop-menu ul li:last-child a { 
-           color: var(--hospital-green);
-           font-size: var(--sm);
+        .email {
+            font-size: var(--sm);
+            font-weight: 300 !important;
         }
+        .mobile-menu ul:nth-child(1){
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .sign-out{
+            color: var(--hospital-green) !important;
+            font-weight: bold;
+            font-size: var(--sm);
+        }
+
     </style>
 </head>
 <body>
-    <div class="desktop-menu">
+    <div class="mobile-menu">
         <ul>
-            <li>
-                <a href="/" class="title">My orders</a>
-            </li>
+            <li><a href="/">CATERORIES</a></li>
+            <li><a href="/">All</a></li>
+            <li><a href="/">Clothes</a></li>
+            <li><a href="/">Electronics</a></li>
+            <li><a href="/">Furnitures</a></li>
+            <li><a href="/">Tys</a></li>
+            <li><a href="/">Others</a></li>
+        </ul>
 
-            <li>
-                <a href="/">My account</a>
-            </li>
+        <ul>
+            <li><a href="/">My orders</a></li>
+            <li><a href="/">My account</a></li>
+        </ul>
 
-            <li>
-                <a href="/">Sign out</a>
-            </li>
+        <ul>
+            <li ><a href="/" class="email">david@david.com</a></li>
+            <li><a href="/" class="sign-out">Sign out</a></li>
         </ul>
     </div>
 </body>
