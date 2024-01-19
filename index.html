@@ -25,6 +25,9 @@
         }
         nav{
             display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            width: 100%;
         }
         .menu{
             display: none;
@@ -34,19 +37,28 @@
         }
         .navbar-left{
             display: flex;
-
+        }
+        .navbar-left ul{
+            margin-left: 18px;
         }
         .navbar-left ul li a,
-        .navbar-rigth ul li a{
+        .navbar-rigth ul li{
             text-decoration: none;
-            color: var(--hospital-green);
+            color: var(--very-light-pink);
             border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .navbar-left ul li a:hover,
+        .navbar-rigth ul li:hover{
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
         }
         .navbar-left ul,
         .navbar-rigth ul{
             list-style: none;
             padding: 0;
-            margin-top: 24px;
+            margin: 0;
             display: flex;
             align-items: center;
         }
